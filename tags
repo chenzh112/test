@@ -1,0 +1,174 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BIN_TARGET	Makefile	/^BIN_TARGET = ${DIR_BIN}\/${TARGET}$/;"	m
+CC	Makefile	/^CC =gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -Wall -g -c  -I${DIR_INC}$/;"	m
+DIR_BIN	Makefile	/^DIR_BIN = .\/bin$/;"	m
+DIR_INC	Makefile	/^DIR_INC = .\/include$/;"	m
+DIR_OBJ	Makefile	/^DIR_OBJ = .\/obj$/;"	m
+DIR_SRC	Makefile	/^DIR_SRC = .\/src$/;"	m
+INIT_LIST_HEAD	include/kernel_list.h	51;"	d
+LDFLAGS	Makefile	/^LDFLAGS =  -lpthread$/;"	m
+LIST_HEAD	include/kernel_list.h	48;"	d
+LIST_HEAD_INIT	include/kernel_list.h	46;"	d
+LIST_POISON1	include/kernel_list.h	38;"	d
+LIST_POISON2	include/kernel_list.h	39;"	d
+NULL_PACKET	include/swmain.h	84;"	d
+OBJ	Makefile	/^OBJ = $(patsubst %.c,${DIR_OBJ}\/%.o,$(notdir ${SRC})) $/;"	m
+PACKET_SIZE_188	include/swmain.h	38;"	d
+PACKET_SIZE_204	include/swmain.h	39;"	d
+PAT	include/swmain.h	80;"	d
+PMT	include/swmain.h	81;"	d
+SDT	include/swmain.h	82;"	d
+SRC	Makefile	/^SRC = $(wildcard ${DIR_SRC}\/*.c)  $/;"	m
+TARGET	Makefile	/^TARGET = main$/;"	m
+__CRC_H__	src/swcrc.h	2;"	d
+__DLIST_H	include/kernel_list.h	2;"	d
+__SWHEAD_H__	include/swmain.h	2;"	d
+__SWLIST_H__	include/swlist.h	2;"	d
+__SWPAT_H__	include/swpat.h	2;"	d
+__SWPMT_H__	include/swpmt.h	2;"	d
+__SWSDT_H__	include/swsdt.h	2;"	d
+__list_add	include/kernel_list.h	/^static inline void __list_add(struct list_head *new, \/\/ 瑕佹彃鍏ョ殑鑺傜偣$/;"	f
+__list_del	include/kernel_list.h	/^static inline void __list_del(struct list_head *prev, struct list_head *next)$/;"	f
+__list_splice	include/kernel_list.h	/^static inline void __list_splice(struct list_head *list,$/;"	f
+__sw_TS_HEAD	include/swpat.h	/^typedef struct __sw_TS_HEAD$/;"	s
+__sw_TS_PAT	include/swpat.h	/^typedef struct __sw_TS_PAT$/;"	s
+__sw_TS_PMT	include/swpmt.h	/^typedef struct __sw_TS_PMT$/;"	s
+adaptation_field_control	include/swpat.h	/^	unsigned int adaptation_field_control; \/\/调整字段控制,01仅含有效负载，10仅含调整字段，11含有调整字段和有效负载。$/;"	m	struct:__sw_TS_HEAD
+container_of	include/kernel_list.h	30;"	d
+continuity_counte	include/swpat.h	/^	unsigned int continuity_counte; \/\/一个4bit的计数器，范围0-15$/;"	m	struct:__sw_TS_HEAD
+crc32	include/swsdt.h	/^	unsigned int crc32;$/;"	m	struct:__anon5
+crc_32	include/swpat.h	/^    unsigned int  crc_32;                     \/\/CRC32校验码 $/;"	m	struct:__sw_TS_PAT
+crc_32	include/swpmt.h	/^    unsigned crc_32                         ; \/\/32 位}sw_ts_pmt_t;$/;"	m	struct:__sw_TS_PMT
+current_next_indicator	include/swpat.h	/^    unsigned int  current_next_indicator;   \/\/发送的PAT是当前有效还是下一个PAT有效  $/;"	m	struct:__sw_TS_PAT
+current_next_indicator	include/swpmt.h	/^    unsigned current_next_indicator       ; \/\/当该位置1时，当前传送的Program map section可用；1位$/;"	m	struct:__sw_TS_PMT
+current_next_indicator	include/swsdt.h	/^	unsigned int current_next_indicator;$/;"	m	struct:__anon5
+description_loop_length	include/swmain.h	/^	unsigned int description_loop_length;$/;"	m	struct:__anon2
+descriptor	include/swmain.h	/^	unsigned int descriptor;$/;"	m	struct:__anon1
+descriptor_length	include/swsdt.h	/^	unsigned int descriptor_length;$/;"	m	struct:__anon6
+descriptor_tag	include/swsdt.h	/^	unsigned int descriptor_tag;$/;"	m	struct:__anon6
+elementary_pid	include/swmain.h	/^	unsigned int elementary_pid    ; \/\/该域指示TS包的PID值。这些TS包含有相关的节目元素    13位$/;"	m	struct:__anon1
+es_info_length	include/swmain.h	/^	unsigned int es_info_length    ; \/\/前两位bit为00。该域指示跟随其后的描述相关节目元素的byte数  12位$/;"	m	struct:__anon1
+etc_present_following_flag	include/swmain.h	/^	unsigned int etc_present_following_flag;$/;"	m	struct:__anon2
+etc_schedulu_flag	include/swmain.h	/^	unsigned int etc_schedulu_flag;$/;"	m	struct:__anon2
+free_ca_mode	include/swmain.h	/^	unsigned int free_ca_mode;$/;"	m	struct:__anon2
+last_section_number	include/swpat.h	/^    unsigned int  last_section_number;      \/\/最后一个分段的号码  $/;"	m	struct:__sw_TS_PAT
+last_section_number	include/swpmt.h	/^    unsigned last_section_number           ; \/\/固定为0x00  8位$/;"	m	struct:__sw_TS_PMT
+last_section_number	include/swsdt.h	/^	unsigned int last_section_number;$/;"	m	struct:__anon5
+list	include/swmain.h	/^	struct list_head list;$/;"	m	struct:__anon1	typeref:struct:__anon1::list_head
+list	include/swmain.h	/^	struct list_head list;$/;"	m	struct:__anon3	typeref:struct:__anon3::list_head
+list	include/swmain.h	/^	struct list_head list;$/;"	m	struct:__anon4	typeref:struct:__anon4::list_head
+list_add	include/kernel_list.h	/^static inline void list_add(struct list_head *new, struct list_head *head)$/;"	f
+list_add_tail	include/kernel_list.h	/^static inline void list_add_tail(struct list_head *new, struct list_head *head)$/;"	f
+list_del	include/kernel_list.h	/^static inline void list_del(struct list_head *entry)$/;"	f
+list_del_init	include/kernel_list.h	/^static inline void list_del_init(struct list_head *entry)$/;"	f
+list_empty	include/kernel_list.h	/^static inline int list_empty(struct list_head *head)$/;"	f
+list_entry	include/kernel_list.h	212;"	d
+list_for_each	include/kernel_list.h	220;"	d
+list_for_each_entry	include/kernel_list.h	248;"	d
+list_for_each_entry_safe	include/kernel_list.h	260;"	d
+list_for_each_prev	include/kernel_list.h	228;"	d
+list_for_each_safe	include/kernel_list.h	238;"	d
+list_head	include/kernel_list.h	/^struct list_head {$/;"	s
+list_move	include/kernel_list.h	/^static inline void list_move(struct list_head *list,$/;"	f
+list_move_tail	include/kernel_list.h	/^static inline void list_move_tail(struct list_head *list,$/;"	f
+list_splice	include/kernel_list.h	/^static inline void list_splice(struct list_head *list, struct list_head *head)$/;"	f
+list_splice_init	include/kernel_list.h	/^static inline void list_splice_init(struct list_head *list,$/;"	f
+main	src/swmain.c	/^int main(int argc,char *argv[])$/;"	f
+name	include/swmain.h	/^	unsigned char name[512];$/;"	m	struct:__anon2
+network_pid	include/swpat.h	/^    unsigned int  network_pid;                \/\/网络信息表（NIT）的PID,节目号为0时对应的PID为network_PID  $/;"	m	struct:__sw_TS_PAT
+next	include/kernel_list.h	/^	struct list_head *next;$/;"	m	struct:list_head	typeref:struct:list_head::list_head
+offsetof	include/kernel_list.h	28;"	d
+original_network_id	include/swsdt.h	/^	unsigned int original_network_id;$/;"	m	struct:__anon5
+payload_unit_start_indicator	include/swpat.h	/^	unsigned int payload_unit_start_indicator;\/\/为1时，在前4个字节之后会有一个调整字节，它的数值决定了负载内容的具体开始位置。$/;"	m	struct:__sw_TS_HEAD
+pcr_pid	include/swpmt.h	/^    unsigned pcr_pid                       ; \/\/指明TS包的PID值，该TS包含有PCR域， 13位$/;"	m	struct:__sw_TS_PMT
+pid	include/swmain.h	/^	int pid;$/;"	m	struct:__anon4
+pid	include/swpat.h	/^	unsigned int pid;\/\/有效负载数据的类型$/;"	m	struct:__sw_TS_HEAD
+pmt_stream_head	include/swmain.h	/^	sw_pmt_stream_t *pmt_stream_head;$/;"	m	struct:__anon3
+prev	include/kernel_list.h	/^	struct list_head *prev;$/;"	m	struct:list_head	typeref:struct:list_head::list_head
+program	include/swpat.h	/^    void     *program;  					   \/\/指向sw_PAT_PROGRAM_t类型$/;"	m	struct:__sw_TS_PAT
+program_info_length	include/swpmt.h	/^    unsigned program_info_length           ; \/\/前两位bit为00。该域指出跟随其后对节目信息的描述的byte数。12位$/;"	m	struct:__sw_TS_PMT
+program_map_pid	include/swmain.h	/^	unsigned int program_map_pid;\/\/节目映射表的PID,每个节目占一个:13$/;"	m	struct:__anon3
+program_number	include/swmain.h	/^	unsigned int program_number;\/\/节目号:16 !!注意:节目号为0时为$/;"	m	struct:__anon3
+program_number	include/swpmt.h	/^    unsigned program_number                ;\/\/ 指出该节目对应于可应用的Program map PID   16位$/;"	m	struct:__sw_TS_PMT
+provider_name	include/swsdt.h	/^	unsigned char provider_name[256];$/;"	m	struct:__anon6
+reserve_1	include/swsdt.h	/^	unsigned int reserve_1;$/;"	m	struct:__anon5
+reserve_2	include/swsdt.h	/^	unsigned int reserve_2;$/;"	m	struct:__anon5
+reserve_future_use_1	include/swsdt.h	/^	unsigned int reserve_future_use_1;$/;"	m	struct:__anon5
+reserve_future_use_2	include/swsdt.h	/^	unsigned int reserve_future_use_2;$/;"	m	struct:__anon5
+reserved_1	include/swpat.h	/^    unsigned int  reserved_1;                 \/\/ 保留位  $/;"	m	struct:__sw_TS_PAT
+reserved_1	include/swpmt.h	/^    unsigned reserved_1                     ; \/\/0x03   2位$/;"	m	struct:__sw_TS_PMT
+reserved_2	include/swpat.h	/^    unsigned int  reserved_2;                \/\/ 保留位  $/;"	m	struct:__sw_TS_PAT
+reserved_2	include/swpmt.h	/^    unsigned reserved_2                     ; \/\/0x03  2位$/;"	m	struct:__sw_TS_PMT
+reserved_3	include/swpat.h	/^    unsigned int  reserved_3;                 \/\/ 保留位  $/;"	m	struct:__sw_TS_PAT
+reserved_3	include/swpmt.h	/^    unsigned reserved_3                     ; \/\/0x07     3位$/;"	m	struct:__sw_TS_PMT
+reserved_4	include/swpmt.h	/^    unsigned reserved_4                     ; \/\/预留为0x0F  4位$/;"	m	struct:__sw_TS_PMT
+reserved_5	include/swpmt.h	/^    unsigned reserved_5                     ; \/\/0x07   3位$/;"	m	struct:__sw_TS_PMT
+reserved_6	include/swpmt.h	/^    unsigned reserved_6                     ; \/\/0x0F   4位$/;"	m	struct:__sw_TS_PMT
+reserver	include/swmain.h	/^	unsigned int reserver;							$/;"	m	struct:__anon3
+running_status	include/swmain.h	/^	unsigned int running_status;$/;"	m	struct:__anon2
+sdt_data	include/swmain.h	/^	sw_sdt_info_t sdt_data;$/;"	m	struct:__anon3
+section_length	include/swpat.h	/^    unsigned int  section_length;            \/\/表示从下一个字段开始到CRC32(含)之间有用的字节数  $/;"	m	struct:__sw_TS_PAT
+section_length	include/swpmt.h	/^    unsigned section_length                 ;\/\/首先两位bit置为00，它指示段的byte数，由段长度域开始，包含CRC。12位$/;"	m	struct:__sw_TS_PMT
+section_length	include/swsdt.h	/^	unsigned int section_length;$/;"	m	struct:__anon5
+section_number	include/swpat.h	/^    unsigned int  section_number;            \/\/分段的号码。PAT可能分为多段传输，第一段为00，以后每个分段加1，最多可能有256个分段  $/;"	m	struct:__sw_TS_PAT
+section_number	include/swpmt.h	/^    unsigned section_number                ; \/\/固定为0x00  8位$/;"	m	struct:__sw_TS_PMT
+section_number	include/swsdt.h	/^	unsigned int section_number;$/;"	m	struct:__anon5
+section_syntax_indicator	include/swpat.h	/^    unsigned int  section_syntax_indicator; \/\/段语法标志位，固定为1  $/;"	m	struct:__sw_TS_PAT
+section_syntax_indicator	include/swpmt.h	/^    unsigned section_syntax_indicator    ; \/\/固定为0x01   1位$/;"	m	struct:__sw_TS_PMT
+section_syntax_indicator	include/swsdt.h	/^	unsigned int section_syntax_indicator;$/;"	m	struct:__anon5
+serverice_name	include/swsdt.h	/^	unsigned char serverice_name[256];$/;"	m	struct:__anon6
+service_id	include/swmain.h	/^	unsigned int service_id;$/;"	m	struct:__anon2
+service_name_length	include/swsdt.h	/^	unsigned int service_name_length;$/;"	m	struct:__anon6
+service_provider_name_length	include/swsdt.h	/^	unsigned int service_provider_name_length;$/;"	m	struct:__anon6
+service_type	include/swsdt.h	/^	unsigned int service_type;$/;"	m	struct:__anon6
+stream_type	include/swmain.h	/^	unsigned int stream_type       ; \/\/指示特定PID的节目元素包的类型。该处PID由elementary PID指定  8位$/;"	m	struct:__anon1
+sw_add_check_pid	src/swlist.c	/^int sw_add_check_pid(int pid,int type,sw_check_pid_t  *check_pid_head)$/;"	f
+sw_add_list_node	src/swlist.c	/^inline int sw_add_list_node(struct list_head *new,struct list_head *head)$/;"	f
+sw_check_pid_t	include/swmain.h	/^}sw_check_pid_t;$/;"	t	typeref:struct:__anon4
+sw_del_list_node	src/swlist.c	/^inline int sw_del_list_node(struct list_head *entry)$/;"	f
+sw_find_pat_node	src/swlist.c	/^sw_pat_program_t * sw_find_pat_node(unsigned int program_number,$/;"	f
+sw_find_pmt_stream_node	src/swlist.c	/^sw_pmt_stream_t * sw_find_pmt_stream_node(unsigned int type,struct list_head *head)$/;"	f
+sw_for_list_loop	include/swmain.h	87;"	d
+sw_free_list	src/swlist.c	/^int sw_free_list(sw_pat_program_t *pat_program_head,sw_check_pid_t  *check_pid_head)$/;"	f
+sw_get_crc32	src/swcrc.c	/^unsigned long sw_get_crc32( unsigned char *buf, int size )$/;"	f
+sw_get_list_entry	include/swmain.h	89;"	d
+sw_get_one_packet	src/swmain.c	/^int sw_get_one_packet(int file_fd,unsigned char *buf,int len)$/;"	f
+sw_init_list	src/swlist.c	/^int sw_init_list(sw_pat_program_t **pat_program_head,sw_check_pid_t  **check_pid_head)$/;"	f
+sw_init_list_head	include/swmain.h	91;"	d
+sw_packet_parser_head	src/swPAT.c	/^int sw_packet_parser_head(unsigned char *data,sw_ts_head_t *pat_head)$/;"	f
+sw_packet_parser_pat_data	src/swPAT.c	/^int sw_packet_parser_pat_data(unsigned char *data,sw_ts_pat_t *pat_data,$/;"	f
+sw_parser_pid	src/swPAT.c	/^void sw_parser_pid(unsigned char *data,int pid,int type,$/;"	f
+sw_parser_pmt_data	src/swPMT.c	/^int sw_parser_pmt_data(unsigned char *data,int pid,sw_ts_pmt_t *pmt_data,$/;"	f
+sw_parser_sdt_data	src/swSDT.c	/^int sw_parser_sdt_data(unsigned char *data,sw_ts_sdt_t *sdt_data,$/;"	f
+sw_pat_program_t	include/swmain.h	/^}sw_pat_program_t;$/;"	t	typeref:struct:__anon3
+sw_pmt_stream_t	include/swmain.h	/^}sw_pmt_stream_t; $/;"	t	typeref:struct:__anon1
+sw_process	src/swPAT.c	/^void sw_process(int file_fd,sw_pat_program_t *pat_program_head,sw_check_pid_t *check_pid_head)$/;"	f
+sw_sdt_descriptor_t	include/swsdt.h	/^}sw_sdt_descriptor_t;$/;"	t	typeref:struct:__anon6
+sw_sdt_info_t	include/swmain.h	/^}sw_sdt_info_t;$/;"	t	typeref:struct:__anon2
+sw_sdt_service_descriptor	src/swSDT.c	/^void sw_sdt_service_descriptor(unsigned char *data)$/;"	f
+sw_show_list	src/swlist.c	/^int sw_show_list(sw_pat_program_t *pat_program_head,sw_check_pid_t  *check_pid_head)$/;"	f
+sw_ts_head_t	include/swpat.h	/^}sw_ts_head_t;$/;"	t	typeref:struct:__sw_TS_HEAD
+sw_ts_pat_t	include/swpat.h	/^}sw_ts_pat_t;$/;"	t	typeref:struct:__sw_TS_PAT
+sw_ts_pmt_t	include/swpmt.h	/^}sw_ts_pmt_t;$/;"	t	typeref:struct:__sw_TS_PMT
+sw_ts_sdt_t	include/swsdt.h	/^}sw_ts_sdt_t;$/;"	t	typeref:struct:__anon5
+sync_byte	include/swpat.h	/^	unsigned int sync_byte;\/\/后面包中的数据是不会出现0x47的$/;"	m	struct:__sw_TS_HEAD
+table_id	include/swpat.h	/^	unsigned int  table_id;                   \/\/固定为0x00 ，标志是该表是PAT表  $/;"	m	struct:__sw_TS_PAT
+table_id	include/swpmt.h	/^    unsigned table_id                       ; \/\/固定为0x02, 表示PMT表，8位$/;"	m	struct:__sw_TS_PMT
+table_id	include/swsdt.h	/^	unsigned int table_id;\/\/可以是0x42,表示描述的是当前流的信息,也可以是0x46,表示是其他流的信息(EPG使用此参数)$/;"	m	struct:__anon5
+transport_error_indicator	include/swpat.h	/^	unsigned int transport_error_indicator;\/\/传输错误标志位，一般传输错误的话就不会处理这个包了$/;"	m	struct:__sw_TS_HEAD
+transport_priority	include/swpat.h	/^	unsigned int transport_priority;\/\/传输优先级位，1表示高优先级$/;"	m	struct:__sw_TS_HEAD
+transport_scrambling_control	include/swpat.h	/^	unsigned int transport_scrambling_control; \/\/加密标志位,00表示未加密$/;"	m	struct:__sw_TS_HEAD
+transport_stream_id	include/swpat.h	/^    unsigned int  transport_stream_id;      \/\/该传输流的ID，区别于一个网络中其它多路复用的流  $/;"	m	struct:__sw_TS_PAT
+transport_stream_id	include/swsdt.h	/^	unsigned int transport_stream_id;$/;"	m	struct:__anon5
+type	include/swmain.h	/^	int type;$/;"	m	struct:__anon4
+version_number	include/swpat.h	/^    unsigned int  version_number;            \/\/范围0-31，表示PAT的版本号  $/;"	m	struct:__sw_TS_PAT
+version_number	include/swpmt.h	/^    unsigned version_number                 ; \/\/指出TS流中Program map section的版本号 5位$/;"	m	struct:__sw_TS_PMT
+version_number	include/swsdt.h	/^	unsigned int version_number;$/;"	m	struct:__anon5
+zero	include/swpat.h	/^    unsigned int  zero;                       \/\/0  $/;"	m	struct:__sw_TS_PAT
+zero	include/swpmt.h	/^    unsigned zero							 ; \/\/0x01   1位      $/;"	m	struct:__sw_TS_PMT
